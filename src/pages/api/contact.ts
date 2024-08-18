@@ -1,4 +1,6 @@
 import type { APIRoute } from 'astro';
+import { config } from 'dotenv';
+config();
 
 export const prerender = false;
 
