@@ -26,7 +26,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         <div class="flex items-center">
           {person.img ?
             <Image
-              class="mr-4 h-12 w-12 rounded-lg"
+              class="mr-4 h-12 w-12 rounded-lg aspect-square object-cover"
               height={48}
               src={images[`/src/img/${person.img}`]()}
               alt=""
@@ -34,14 +34,14 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
             />
             :
             <Image
-              class="mr-4 h-12 w-12 rounded-lg dark:hidden"
+              class="mr-4 h-12 w-12 rounded-lg aspect-square object-cover dark:hidden"
               height={48}
               src={images['/src/img/avatar-light.png']()}
               alt=""
               width={48}
             />
             <Image
-              class="mr-4 hidden h-12 w-12 rounded-lg dark:block"
+              class="mr-4 hidden h-12 w-12 rounded-lg aspect-square object-cover dark:block"
               height={48}
               src={images['/src/img/avatar-dark.png']()}
               alt=""

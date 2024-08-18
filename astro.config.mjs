@@ -26,12 +26,5 @@ export default defineConfig({
       applyBaseStyles: false,
       nesting: true
     })
-  ],
-  // These were specific redirects we needed for our podcast, if you do not have any routes to redirect, you can safely remove this.
-  redirects: {
-    '/hot-takes-tan-stack-and-open-source-with-tanner-linsley':
-      '/hot-takes-tanstack-and-open-source-with-tanner-linsley',
-    '/creating-code-pen-tackling-tailwind-and-keeping-it-simple-with-chris-coyier':
-      'creating-codepen-tackling-tailwind-and-keeping-it-simple-with-chris-coyier'
-  }
+  ]
 });
