@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import db from '@astrojs/db';
+// import db from '@astrojs/db';
 import preact from '@astrojs/preact';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -19,7 +19,7 @@ export default defineConfig({
   }),
   site: 'https://starpod.dev',
   integrations: [
-    db(),
+    // db(),
     preact(),
     sitemap(),
     tailwind({
