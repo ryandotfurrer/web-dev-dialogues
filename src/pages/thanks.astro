@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact">
+  <div class="fade-in relative z-10 px-8 pb-1 lg:px-18">
+    <h1
+      class="mb-4 text-2xl font-bold text-light-text-heading lg:mb-6 lg:text-5xl dark:text-white"
+    >
+      Thanks for reaching out!
+    </h1>
+
+    <p class="mb-8">
+      I'll get back to you as soon as I can. In the meantime, feel free to
+      checkot the latest episodes of the <a
+        class="font-bold text-light-text-heading underline dark:text-white"
+        href="/">podcast</a
+      >, follow me on <a
+        class="font-bold text-light-text-heading underline dark:text-white"
+        href="https://x.com/ryandotfurrer"
+        target="_blank"
+        rel="noopener noreferrer">X (Twitter)</a
+      >, or checkout what else I have to offer on <a
+        class="font-bold text-light-text-heading underline dark:text-white"
+        href="https://ryanfurrer.com/"
+        target="_blank"
+        rel="noopener noreferrer">my website</a
+      >.
+    </p>
+  </div>
+</Layout>
+
+<style>
+  @keyframes astroFadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: astroFadeIn 0.25s ease-in-out;
+  }
+
+  a:hover {
+    @apply text-emerald-600 dark:text-emerald-400;
+  }
+</style>

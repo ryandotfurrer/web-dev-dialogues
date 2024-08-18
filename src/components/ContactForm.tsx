@@ -16,34 +16,19 @@ export default function ContactForm() {
     if (data.message) {
       setResponseMessage(data.message);
     }
+
+    window.location.href = '/thanks';
   }
 
   return (
     <form class="flex flex-col gap-2" onSubmit={submit}>
-      <input
-        class="input"
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        required
-      />
-      <input
-        class="input"
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-        required
-      />
+      <label htmlFor="name">name</label>
+      <input class="input mb-4" type="text" id="name" name="name" required />
+      <label htmlFor="email">email</label>
+      <input class="input mb-4" type="email" id="email" name="email" required />
 
-      <textarea
-        class="input"
-        id="message"
-        name="message"
-        placeholder="Write a message"
-        required
-      />
+      <label htmlFor="message">message</label>
+      <textarea class="input" id="message" name="message" required />
 
       <div class="my-6 flex w-full justify-end">
         <button class="btn w-full justify-center lg:w-auto">
