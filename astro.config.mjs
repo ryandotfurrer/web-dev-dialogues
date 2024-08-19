@@ -17,9 +17,8 @@ export default defineConfig({
       enabled: true
     }
   }),
-  site: 'https://starpod.dev',
+  site: 'https://webdevdialogues.com',
   integrations: [
-    // db(),
     preact(),
     sitemap(),
     tailwind({
